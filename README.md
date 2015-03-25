@@ -1,2 +1,5 @@
 #Mini Twr
-je suis la
+
+Liste des tâches : 
+- Répartir les tâches
+- Préparer un design du site 
