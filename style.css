@@ -30,14 +30,6 @@ a:hover {
 	float:left;
 }
 
-.message {
-	background:#aaa;
-	width:150px;
-	height:300px;
-	border-radius:10px;
-	float:center;
-}
-
 .fil{
 	background-color:#555;
 	text-align:center;
@@ -68,6 +60,10 @@ a:hover {
 .noflo {
 	float:none;
 	margin-left:400px;
+}
+
+.repondre {
+	margin-left: 250px;
 }
 
 .mt {
