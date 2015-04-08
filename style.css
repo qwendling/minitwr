@@ -25,6 +25,7 @@ body {
 	background-color:#555;
 	text-align:center;
 	margin-left:300px;
+	margin-top:10px;
 	width:1000px;
 	border-radius:10px;
 }
@@ -45,4 +46,13 @@ body {
 
 .tweet {
 	margin-left:61%;
+}
+
+.noflo {
+	float:none;
+	margin-left:400px;
+}
+
+.mt {
+	text-align:center;
 }

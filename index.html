@@ -20,46 +20,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">MiniTwr</a>
+      <a class="navbar-brand" href="./index.html">MiniTwr</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="http://9gag.com/">9gag <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Mon compte</a></li>
+		<li><a href="#">Deconnection</a></li>
+      </ul>
+		<form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
     </div>
   </div>
 </nav>
@@ -68,13 +47,21 @@
 
 <body>
 	<div class="menu">
-		<h2>Menu</h2>
+		<h2 class="mt">Menu</h2>
 		<ul>
-			<li>Contacts</li>
-			<li>Messages</li>
-			<li>Notification</li>
+			<li><a href="./contacts.html">Contacts</a></li>
+			<li><a href="./massages.html">Messages</a></li>
+			<li><a href="./index.html">Notification</a></li>
 		</ul>
 	</div>
+
+    <div class="input-group col-lg-6 noflo">
+      <input type="text" class="form-control" placeholder="What's up">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Tweet</button>
+      </span>
+    </div>
+
 	<div class="fil">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lorem est. Aenean sed placerat lorem, a dapibus orci. Nunc eget leo at eros venenatis suscipit fringilla a massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean mattis magna vitae lectus scelerisque facilisis. Mauris nec ante porta, laoreet mi non, imperdiet risus. Sed et lobortis mauris. Suspendisse molestie cursus ante, nec ornare odio bibendum ut. Vivamus ornare dictum risus eu pretium. Fusce est tellus, pretium in suscipit imperdiet, facilisis nec ligula.
 
@@ -82,7 +69,7 @@ Nam vestibulum malesuada neque id vulputate. Fusce non consectetur risus. Sed co
 
 Ut convallis magna sit amet quam mattis, in fermentum dui pharetra. Nulla malesuada ultrices lacus, vitae ultricies dolor lacinia ac. Proin fringilla est quis diam molestie feugiat. Nulla facilisi. Nunc lobortis lacus eget efficitur pellentesque. Aliquam massa tellus, venenatis quis sollicitudin ac, faucibus et ex. Nulla a dui vitae ipsum consequat accumsan. Integer dictum molestie arcu, non vulputate turpis maximus in. Donec scelerisque fringilla viverra. Suspendisse nisl nibh, laoreet eu commodo quis, condimentum sed arcu. Nullam dui elit, interdum sed imperdiet id, consectetur ac neque. Nam aliquet magna eu iaculis rutrum. Morbi in blandit odio. Aliquam bibendum turpis sapien, sit amet mattis sem elementum sed.</p>
 	</div>
-	<button type="button" class="btn btn-primary btn-lg active col-md-1 tweet">Tweet</button>
+
 </body>
 
 
