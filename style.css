@@ -12,6 +12,14 @@ body {
 	margin-top:60px;
 }
 
+li {
+	list-style-type:none
+}
+ a:hover {
+	color:blue;
+	text-decoration:none;
+	text-weight:bold;
+}
 
 .menu {
 	background:#aaa;
@@ -19,6 +27,7 @@ body {
 	height:300px;
 	border-radius:10px;
 	float:left;
+	position:static;
 }
 
 .fil{
