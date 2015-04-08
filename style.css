@@ -12,14 +12,6 @@ body {
 	margin-top:60px;
 }
 
-li {
-	list-style-type:none
-}
- a:hover {
-	color:blue;
-	text-decoration:none;
-	text-weight:bold;
-}
 
 .menu {
 	background:#aaa;
@@ -27,7 +19,14 @@ li {
 	height:300px;
 	border-radius:10px;
 	float:left;
-	position:static;
+}
+
+.message {
+	background:#aaa;
+	width:150px;
+	height:300px;
+	border-radius:10px;
+	float:center;
 }
 
 .fil{
