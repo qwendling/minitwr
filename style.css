@@ -1,0 +1,66 @@
+h1 {
+	text-align:center;
+	border-bottom:3px;
+}
+html {
+	background-color:#222;
+	padding:0px;
+}
+
+body {
+	background:#222;
+	margin-top:60px;
+}
+
+
+.menu {
+	background:#aaa;
+	width:150px;
+	height:300px;
+	border-radius:10px;
+	float:left;
+}
+
+.message {
+	background:#aaa;
+	width:150px;
+	height:300px;
+	border-radius:10px;
+	float:center;
+}
+
+.fil{
+	background-color:#555;
+	text-align:center;
+	margin-left:300px;
+	margin-top:10px;
+	width:1000px;
+	border-radius:10px;
+}
+
+.flo {
+	color:blue;
+}
+
+.flo ul{
+	display:inline-block;
+	vertical-align:top;
+}
+
+.navbar-inverse{
+	background:#285acb;
+	margin-bottom:0px;
+}
+
+.tweet {
+	margin-left:61%;
+}
+
+.noflo {
+	float:none;
+	margin-left:400px;
+}
+
+.mt {
+	text-align:center;
+}
