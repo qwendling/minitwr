@@ -1,6 +1,7 @@
 extends layout
 
 block content
+        
   header
     nav.navbar.navbar-inverse.navbar-fixed-top
       .container-fluid
@@ -26,6 +27,10 @@ block content
             .form-group
               input.form-control(type='text', placeholder='Search') 
             button.btn.btn-default(type='submit') Submit
+  
+
+      
+      
   .menu
     h2.mt Menu
       br
@@ -36,12 +41,18 @@ block content
         a(href='./messages.html') Messages
       li
         a(href='./index.html') Notifications
-  |     
-  .input-group.col-lg-6.noflo
-    input.form-control(type='text', placeholder="What's up")
-    |       
-    span.input-group-btn
-      button.btn.btn-default(type='button') Tweet
+  | 
+  form(action='/', method='POST')      
+    .input-group.col-lg-6.noflo
+      input.form-control(name="tweet", type='text', placeholder="What's up")
+      |       
+      span.input-group-btn
+        button.btn.btn-default(type='button') Tweet
+  ul
+    - each tweet in tweets
+      .fil= tweet
+
+      
   .fil
     p
     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lorem est. Aenean sed placerat lorem, a dapibus orci. Nunc eget leo at eros venenatis suscipit fringilla a massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean mattis magna vitae lectus scelerisque facilisis. Mauris nec ante porta, laoreet mi non, imperdiet risus. Sed et lobortis mauris. Suspendisse molestie cursus ante, nec ornare odio bibendum ut. Vivamus ornare dictum risus eu pretium. Fusce est tellus, pretium in suscipit imperdiet, facilisis nec ligula.
