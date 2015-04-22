@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  header
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation 
+            span.icon-bar;    
+            span.icon-bar   
+            span.icon-bar
+          a.navbar-brand(href='./index.jade') MiniTwr
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='http://9gag.com/')
+                | link 
+                span.sr-only (current) 
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#') Mon compte
+            li
+              a(href='#') Deconnection
+          form.navbar-form.navbar-right(role='search')
+            .form-group
+              input.form-control(type='text', placeholder='Search') 
+            button.btn.btn-default(type='submit') Submit
+  .menu
+    h2.mt Menu
+      br
+    ul
+      li
+        a(href='./contacts.html') Contacts
+      li
+        a(href='./messages.html') Messages
+      li
+        a(href='./index.html') Notifications
+  |     
+  .input-group.col-lg-6.noflo
+    input.form-control(type='text', placeholder="What's up")
+    |       
+    span.input-group-btn
+      button.btn.btn-default(type='button') Tweet
+  .fil
+    p
+    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lorem est. Aenean sed placerat lorem, a dapibus orci. Nunc eget leo at eros venenatis suscipit fringilla a massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean mattis magna vitae lectus scelerisque facilisis. Mauris nec ante porta, laoreet mi non, imperdiet risus. Sed et lobortis mauris. Suspendisse molestie cursus ante, nec ornare odio bibendum ut. Vivamus ornare dictum risus eu pretium. Fusce est tellus, pretium in suscipit imperdiet, facilisis nec ligula.
+    | Nam vestibulum malesuada neque id vulputate. Fusce non consectetur risus. Sed condimentum erat eget neque ullamcorper dignissim. Donec vel auctor lectus, at elementum lorem. Sed feugiat facilisis libero quis pellentesque. Vivamus mi lectus, lacinia sed volutpat et, vehicula a nulla. Fusce fringilla felis eget urna dapibus vehicula. Pellentesque euismod pellentesque mi, molestie sollicitudin sem mollis a. Donec eget congue erat. Nunc pretium lorem vel lacus tempor, porta pulvinar ligula pulvinar. Duis cursus nisl ac ante pretium dictum vitae eget dolor. Vivamus blandit lorem nulla, sed tristique nibh molestie ac. Vivamus rhoncus velit vel posuere vestibulum. Donec a quam erat.
+    | Ut convallis magna sit amet quam mattis, in fermentum dui pharetra. Nulla malesuada ultrices lacus, vitae ultricies dolor lacinia ac. Proin fringilla est quis diam molestie feugiat. Nulla facilisi. Nunc lobortis lacus eget efficitur pellentesque. Aliquam massa tellus, venenatis quis sollicitudin ac, faucibus et ex. Nulla a dui vitae ipsum consequat accumsan. Integer dictum molestie arcu, non vulputate turpis maximus in. Donec scelerisque fringilla viverra. Suspendisse nisl nibh, laoreet eu commodo quis, condimentum sed arcu. Nullam dui elit, interdum sed imperdiet id, consectetur ac neque. Nam aliquet magna eu iaculis rutrum. Morbi in blandit odio. Aliquam bibendum turpis sapien, sit amet mattis sem elementum sed.
+
+
