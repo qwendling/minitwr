@@ -39,6 +39,15 @@ a:hover {
 	border-radius:10px;
 }
 
+.messa{
+	background-color:#555;
+	text-align:center;
+	margin-left:300px;
+	margin-top:10px;
+	width:1000px;
+	border-radius:10px;
+}
+
 .flo {
 	color:blue;
 }
@@ -54,6 +63,10 @@ a:hover {
 }
 
 .tweet {
+	margin-left:61%;
+}
+
+.mess {
 	margin-left:61%;
 }
 

@@ -11,7 +11,7 @@ block content
             span.icon-bar;    
             span.icon-bar   
             span.icon-bar
-          a.navbar-brand(href='./index.jade') MiniTwr
+          a.navbar-brand(href='/') MiniTwr
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             li.active
@@ -26,21 +26,19 @@ block content
           form.navbar-form.navbar-right(role='search')
             .form-group
               input.form-control(type='text', placeholder='Search') 
-            button.btn.btn-default(type='submit') Submit
-  
+            button.btn.btn-default(type='submit') Submit 
+      
 
-      
-      
   .menu
     h2.mt Menu
       br
     ul
       li
-        a(href='./contacts.html') Contacts
+        a(href='/contacts') Contacts
       li
-        a(href='./messages.html') Messages
+        a(href='/messages') Messages
       li
-        a(href='./index.html') Notifications
+        a(href='/') Notifications
   | 
   form(action='/', method='POST')      
     .input-group.col-lg-6.noflo
