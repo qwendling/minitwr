@@ -28,7 +28,23 @@ var server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
+app.get('/messages', function (req, res) {
+  res.sendfile(__dirname + '/messages.jade');
+});
+io = require('socket.io').listen(server);
 
+io.sockets.on('connection', function (socket, pseudo) {
+    // Dès qu'on nous donne un pseudo, on le stocke en variable de session et on informe les autres personnes
+    socket.on('nouveau_client', function(pseudo) {
+        socket.pseudo = pseudo;
+        socket.broadcast.emit('nouveau_client', pseudo);
+    });
+
+    // Dès qu'on reçoit un message, on récupère le pseudo de son auteur et on le transmet aux autres personnes
+    socket.on('message', function (message) {
+        socket.broadcast.emit('message', {pseudo: socket.pseudo, message: message});
+    }); 
+});
 /**
  * Normalize a port into a number, string, or false.
  */

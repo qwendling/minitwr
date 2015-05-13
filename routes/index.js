@@ -19,7 +19,7 @@ router.get('/contacts', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-  tweets.unshift(req.body.tweet+"\n"+date);
+  tweets.unshift(req.body.tweet+date);
   res.redirect('/')
 });
 
@@ -28,4 +28,8 @@ router.post('/messages', function(req, res, next) {
   res.redirect('messages')
 });
 
+
 module.exports = router;
+
+
+
