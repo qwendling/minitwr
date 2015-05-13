@@ -31,7 +31,9 @@ a:hover {
 }
 
 .fil{
-	background-color:#555;
+  font-family:'Trebuchet MS';
+	background-color:#666;
+	color:#000;
 	text-align:center;
 	margin-left:300px;
 	margin-top:10px;
