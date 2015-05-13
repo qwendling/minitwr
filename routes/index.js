@@ -3,7 +3,7 @@ var router = express.Router();
 var tweets = [];
 var messages = [];
 var currentdate = new Date();
-var date = currentdate.getDate()+ "/" + (currentdate.getMonth()+1);
+var date = currentdate.getDate()+ "/" + (currentdate.getMonth()+1) +" à " + currentdate.getHours() + ":" + currentdate.getMinutes();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
