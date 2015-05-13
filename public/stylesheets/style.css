@@ -31,6 +31,7 @@ a:hover {
 }
 
 .fil{
+  word-wrap:break-word;
   font-family:'Trebuchet MS';
 	background-color:#666;
 	color:#000;
