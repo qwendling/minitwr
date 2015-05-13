@@ -19,9 +19,9 @@ router.get('/contacts', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
 	var currentdate = new Date();
-	var date = " le " + currentdate.getDate()+ "/" + (currentdate.getMonth()+1) +" à " + currentdate.getHours() + ":" + currentdate.getMinutes();
+	var date = "(le " + currentdate.getDate()+ "/" + (currentdate.getMonth()+1) +" à " + currentdate.getHours() + ":" + currentdate.getMinutes()+") ";
 	
-  tweets.unshift(req.body.tweet+date);
+  tweets.unshift(date+req.body.tweet);
   res.redirect('/')
 });
 
