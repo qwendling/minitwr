@@ -56,8 +56,11 @@ block content
     // Connexion à socket.io
     var socket = io.connect('http://localhost:2015');
         // On demande le pseudo, on l'envoie au serveur et on l'affiche dans le titre
+    var date;
+    var currentdate=new Date();
     var pseudo = prompt('Quel est votre pseudo ?');
     socket.emit('nouveau_client', pseudo);
+    
     document.title = pseudo + ' - ' + document.title;
     // Quand on reçoit un message, on l'insère dans la page
     socket.on('message', function(data) {
@@ -77,7 +80,8 @@ block content
     });
     // Ajoute un message dans la page
     function insereMessage(pseudo, message) {
-    $('#zone_chat').prepend('<p><strong>' + pseudo + '</strong> ' + message + '</p>');
+    date=currentdate.getDate()+ "/" + (currentdate.getMonth()+1) +" à " + currentdate.getHours() + ":" + currentdate.getMinutes();
+    $('#zone_chat').prepend('<p>'+'<span class="date">'+date+'</span>'+'   <strong>' + pseudo + ':</strong> ' + message + '</p>');
     }
 
     
