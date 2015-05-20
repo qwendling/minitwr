@@ -89,3 +89,11 @@ a:hover {
 .date{
   font-style:italic;
 }
+
+.panel.panel-info .panel-heading{
+  color:#fff;
+  background:#555;
+}
+.panel-footer{
+  color:black;
+}
