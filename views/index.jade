@@ -1,53 +1,15 @@
 extends layout
 
 block content
-        
-  header
-    nav.navbar.navbar-inverse.navbar-fixed-top
-      .container-fluid
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-            span.sr-only Toggle navigation 
-            span.icon-bar
-            span.icon-bar   
-            span.icon-bar
-          a.navbar-brand(href='/') MiniTwr
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li.active
-              a(href='http://9gag.com/')
-                | link 
-                span.sr-only (current) 
-          ul.nav.navbar-nav.navbar-right
-            li
-              a(href='#') Mon compte
-            li
-              a(href='#') Deconnection
-
-      
-
-  .menu
-    h2.mt Menu
-      br
-    ul
-      li
-        a(href='/contacts') Contacts
-      li
-        a(href='/messages') Chat
-      li
-        a(href='/') Notifications
-  | 
-  form(action='/', method='POST')      
-    .input-group.col-lg-6.noflo
-      input.form-control(name="tweet", type='text', placeholder="What's up")
-      |       
-      span.input-group-btn
-        button.btn.btn-default(type='submit') Tweet
-  ul
-    - each tweet in tweets
-      .fil= tweet
-
-      
-  .fil
-    p
-
+	div.container
+		div.row
+			div.col-sm-6.col-md-4.col-md-offset-4
+				h1.text-center.login-title Connexion
+					div.account-wall
+						form(class='form-signin', action='/pseudo', method='POST')
+							input(type='text', name='pseudo' class='form-control', placeholder='pseudo',required, autofocus)
+							button(class='btn btn-lg btn-primary btn-block', type='submit') Connexion
+							span.clearfix
+					#message
+					if message
+						h1.text-center.error-message #{message}

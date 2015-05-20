@@ -4,7 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var passport=require('passport');
+var LocalStrategy = require('passport-local').Strategy;
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -55,6 +56,7 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
 
 
 module.exports = app;
