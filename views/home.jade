@@ -11,7 +11,7 @@ block content
             span.icon-bar
             span.icon-bar   
             span.icon-bar
-          a.navbar-brand(href='/') MiniTwr
+          a.navbar-brand(href='/home') MiniTwr
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             li.active
@@ -20,9 +20,7 @@ block content
                 span.sr-only (current) 
           ul.nav.navbar-nav.navbar-right
             li
-              a(href='#') Mon compte
-            li
-              a(href='#') Deconnection
+              a(href='/') Deconnection
 
       
 
@@ -31,13 +29,9 @@ block content
       br
     ul
       li
-        a(href='/contacts') Contacts
-      li
         a(href='/messages') Chat
       li
-        a(href='/') Notifications
-      li
-        a(href='/login') login
+        a(href='/home') Notifications
   | 
   form(action='/home', method='POST')      
     .input-group.col-lg-6.noflo
