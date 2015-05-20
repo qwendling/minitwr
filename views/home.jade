@@ -20,19 +20,14 @@ block content
                 span.sr-only (current) 
           ul.nav.navbar-nav.navbar-right
             li
+              a(href='/messages') Chat
+            li
+              a(href='/home') Notifications
+            li
               a(href='/') Deconnection
 
       
 
-  .menu
-    h2.mt Menu
-      br
-    ul
-      li
-        a(href='/messages') Chat
-      li
-        a(href='/home') Notifications
-  | 
   form(action='/home', method='POST')      
     .input-group.col-lg-6.noflo
       input.form-control(name="tweet", type='text', placeholder="What's up")

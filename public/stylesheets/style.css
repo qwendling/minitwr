@@ -24,8 +24,8 @@ a:hover {
 
 .menu {
 	background:#aaa;
-	width:150px;
-	height:150px;
+	//width:150px;
+	//height:150px;
 	border-radius:10px;
 	float:right;
 }
